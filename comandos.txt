@@ -1,0 +1,12 @@
+Change Directory: cd
+ls -al: Lista de archivos, inclusos los ocultos
+ls -l:  Lista los archivos, pero no muestra los ocultos
+ls -a: Muestra el grupo de archivos, pero no en una Lista
+ctrl + l: Limpia la consola al igual que cls o clear
+Make Directory: mkdir
+touch: Te permite crear un archivo vacio, ejemplo touch vacio.txt
+cat: Te muestra el contenido de un documento
+History: Te muestra el historico de comandos usados
+! + numero comando en histori: Te ejecuta el comando definido en la lista dada en History
+rm: Elimina un archivo
+--help: Te muestra las opciones que tienes para ejecutar el comando definido como inicio, ejemplo: rm --help
