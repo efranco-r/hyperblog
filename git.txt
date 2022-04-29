@@ -1,0 +1,13 @@
+git init: Crea un nuevo repositorio
+git add: Agrega el contenido al stage
+git status: Muestra el estado actual de los archivos en stage
+git rm --cached: Remueve de la memoria el archivo que se encuentra en stage
+
+git config: Muestra las configuraciones que tiene  GIT
+git config --list: Lista la configuración actual que tiene GIT.
+git config --list --show-origin: Muestra donde estan las configuraciones guardadas
+
+git config --global user.name "Name": Cambia el Nombre del usuario que realiza las operaciones en GIT
+git config --global user.email "Email": Cambia el email del usuario que esta realizando las operaciones
+
+git config --global --list: Lista los valores que tienen todas las variables globales de GIT
