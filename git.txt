@@ -1,7 +1,8 @@
 git init: Crea un nuevo repositorio
 git add: Agrega el contenido al stage
 git status: Muestra el estado actual de los archivos en stage
-git rm --cached: Remueve de la memoria el archivo que se encuentra en stage
+git rm --cached: Elimina los archivos de nuestro repositorio local y del área de staging, pero los mantiene en nuestro disco duro. Básicamente le dice a Git que deje de trackear el historial de cambios de estos archivos, por lo que pasaran a un estado untracked.
+git rm --force: Elimina los archivos de Git y del disco duro. Git siempre guarda todo, por lo que podemos acceder al registro de la existencia de los archivos, de modo que podremos recuperarlos si es necesario (pero debemos usar comandos más avanzados).
 
 git config: Muestra las configuraciones que tiene  GIT
 git config --list: Lista la configuración actual que tiene GIT.
@@ -20,13 +21,55 @@ git diff <id_original commit> <id_nuevo commit>: Me permite ver los cambios entr
 
 
 git checkout: Traigo los ultimos o los cambios que requiero hacia mi carpeta.
-git checkout <id_coomit> <nombre del archivo>: Me regresa el archivo a la versión del commit definido.
+git checkout <id_commit> <nombre del archivo>: Me regresa el archivo a la versión del commit definido.
 git reset <id_commit>: Nos permite volver a una versión anterior
 git reset <id_commit> --hard: Nos permite que todo vuelva al estado anterior
 git reset <id_commit> --soft: Nos permite que todo vuelva al estado anterior, pero lo que esta en staging seguira en staging
+git reset HEAD: Este es el comando para sacar archivos del área de staging. No para borrarlos ni nada de eso, solo para que los últimos cambios de estos archivos no se envíen al último commit, a menos que cambiemos de opinión y los incluyamos de nuevo en staging con git add, por supuesto.
 
 git log: Nos muestra el historia de coomits que hemos venido haciendo
 git log --stat: Nos muestra los cambios especificos que se hicieron en cuales archivos
 {Cuando los cambios son mas largos de lo que nos puede mostrar la pantalla me puedo mover con las fechas y salirme con la letra "q"}
 
 Branch: Master, Development, Hotfix
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Comandos para trabajo remoto con GIT
+
+git clone url_del_servidor_remoto: Nos permite descargar los archivos de la última versión de la rama principal y todo el historial de cambios en la carpeta .git.
+git push: Luego de hacer git add y git commit debemos ejecutar este comando para mandar los cambios al servidor remoto.
+git fetch: Lo usamos para traer actualizaciones del servidor remoto y guardarlas en nuestro repositorio local (en caso de que hayan, por supuesto).
+git merge: También usamos el comando git merge con servidores remotos. Lo necesitamos para combinar los últimos cambios del servidor remoto y nuestro directorio de trabajo.
+git pull: Básicamente, git fetch y git merge al mismo tiempo.
+
+Adicionalmente, tenemos otros comandos que nos sirven para trabajar en proyectos muy grandes:
+
+git log --oneline:Te muestra el id commit y el título del commit.
+git log --decorate: Te muestra donde se encuentra el head point en el log.
+git log --stat: Explica el número de líneas que se cambiaron brevemente.
+git log -p: Explica el número de líneas que se cambiaron y te muestra que se cambió en el contenido.
+git shortlog: Indica que commits ha realizado un usuario, mostrando el usuario y el título de sus commits.
+git log --graph --oneline --decorate y
+git log --pretty=format:"%cn hizo un commit %h el dia %cd": Muestra mensajes personalizados de los commits.
+git log -3: Limitamos el número de commits.
+git log --after=“2018-1-2”
+git log --after=“today” y
+git log --after=“2018-1-2” --before=“today”: Commits para localizar por fechas.
+git log --author=“Name Author”: Commits hechos por autor que cumplan exactamente con el nombre.
+git log --grep=“INVIE”: Busca los commits que cumplan tal cual está escrito entre las comillas.
+git log --grep=“INVIE” –i: Busca los commits que cumplan sin importar mayúsculas o minúsculas.
+git log – index.html: Busca los commits en un archivo en específico.
+git log -S “Por contenido”: Buscar los commits con el contenido dentro del archivo.
+git log > log.txt: guardar los logs en un archivo txt
