@@ -20,8 +20,13 @@ git diff <id_original commit> <id_nuevo commit>: Me permite ver los cambios entr
 
 
 git checkout: Traigo los ultimos o los cambios que requiero hacia mi carpeta.
+git checkout <id_coomit> <nombre del archivo>: Me regresa el archivo a la versión del commit definido.
 git reset <id_commit>: Nos permite volver a una versión anterior
 git reset <id_commit> --hard: Nos permite que todo vuelva al estado anterior
 git reset <id_commit> --soft: Nos permite que todo vuelva al estado anterior, pero lo que esta en staging seguira en staging
+
+git log: Nos muestra el historia de coomits que hemos venido haciendo
+git log --stat: Nos muestra los cambios especificos que se hicieron en cuales archivos
+{Cuando los cambios son mas largos de lo que nos puede mostrar la pantalla me puedo mover con las fechas y salirme con la letra "q"}
 
 Branch: Master, Development, Hotfix
