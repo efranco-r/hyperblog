@@ -11,3 +11,17 @@ git config --global user.name "Name": Cambia el Nombre del usuario que realiza l
 git config --global user.email "Email": Cambia el email del usuario que esta realizando las operaciones
 
 git config --global --list: Lista los valores que tienen todas las variables globales de GIT
+
+Esc + Shift + ZZ: Salir del editor de mensajes de commit
+Esc, luego i: Me permitirá agregar texto en el editor de VIM
+
+git diff <id commit>: Me permite ver los cambios entre un archivo y otro 
+git diff <id_original commit> <id_nuevo commit>: Me permite ver los cambios entre lo que definimos como archivo original, y lo que se suponeq ue es un archivo nuevo
+
+
+git checkout: Traigo los ultimos o los cambios que requiero hacia mi carpeta.
+git reset <id_commit>: Nos permite volver a una versión anterior
+git reset <id_commit> --hard: Nos permite que todo vuelva al estado anterior
+git reset <id_commit> --soft: Nos permite que todo vuelva al estado anterior, pero lo que esta en staging seguira en staging
+
+Branch: Master, Development, Hotfix
