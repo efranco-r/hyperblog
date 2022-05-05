@@ -96,3 +96,14 @@ git checkout -nombre de la rama-: Con este comando puedes saltar de una rama a o
 git checkout -b rama: Genera una rama y nos mueve a ella automáticamente, Es decir, es la combinación de git brach y git checkout al mismo tiempo.
 git reset id-commit: Nos lleva a cualquier commit no importa la rama, ya que identificamos el id del tag., eliminando el historial de los commit posteriores al tag seleccionado.
 git checkout rama-o-id-commit: Nos lleva a cualquier commit sin borrar los commit posteriores al tag seleccionado.
+
+
+
+
+
+
+
+[Comandos para trabajar con repositorios remotos]
+git remote add origin <repo_remoto>: Agrega un repositorio remoto a nuestro git local
+git remote: Nos indica si tenemos un repositorio remoto
+git remote -v: Nos muestra si tenemos un repositorio remoto y agrega información verbal.
