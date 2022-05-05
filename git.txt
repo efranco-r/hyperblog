@@ -107,3 +107,7 @@ git checkout rama-o-id-commit: Nos lleva a cualquier commit sin borrar los commi
 git remote add origin <repo_remoto>: Agrega un repositorio remoto a nuestro git local
 git remote: Nos indica si tenemos un repositorio remoto
 git remote -v: Nos muestra si tenemos un repositorio remoto y agrega información verbal.
+
+
+[Resolver problemas al conectarme a un repo remoto y que existan cambios alla que no estan sincronizados con los mios]
+git pull origin master --allow-unrelated-histories
