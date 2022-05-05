@@ -4,6 +4,8 @@ git status: Muestra el estado actual de los archivos en stage
 git rm --cached: Elimina los archivos de nuestro repositorio local y del área de staging, pero los mantiene en nuestro disco duro. Básicamente le dice a Git que deje de trackear el historial de cambios de estos archivos, por lo que pasaran a un estado untracked.
 git rm --force: Elimina los archivos de Git y del disco duro. Git siempre guarda todo, por lo que podemos acceder al registro de la existencia de los archivos, de modo que podremos recuperarlos si es necesario (pero debemos usar comandos más avanzados).
 
+git commit -am "Mensaje": Te permite hacer de forma automatica el git add - Solo funciona con los archivos a los cuales les habia hecho add previamente.
+
 git config: Muestra las configuraciones que tiene  GIT
 git config --list: Lista la configuración actual que tiene GIT.
 git config --list --show-origin: Muestra donde estan las configuraciones guardadas
@@ -73,3 +75,24 @@ git log --grep=“INVIE” –i: Busca los commits que cumplan sin importar may�
 git log – index.html: Busca los commits en un archivo en específico.
 git log -S “Por contenido”: Buscar los commits con el contenido dentro del archivo.
 git log > log.txt: guardar los logs en un archivo txt
+
+
+
+
+
+
+
+
+
+
+
+
+
+Cómo funcionan las ramas en GIT
+Las ramas son la manera de hacer cambios en nuestro proyecto sin afectar el flujo de trabajo de la rama principal. Esto porque queremos trabajar una parte muy específica de la aplicación o simplemente experimentar.
+
+git branch -nombre de la rama-: Con este comando se genera una nueva rama.
+git checkout -nombre de la rama-: Con este comando puedes saltar de una rama a otra.
+git checkout -b rama: Genera una rama y nos mueve a ella automáticamente, Es decir, es la combinación de git brach y git checkout al mismo tiempo.
+git reset id-commit: Nos lleva a cualquier commit no importa la rama, ya que identificamos el id del tag., eliminando el historial de los commit posteriores al tag seleccionado.
+git checkout rama-o-id-commit: Nos lleva a cualquier commit sin borrar los commit posteriores al tag seleccionado.
