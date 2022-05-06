@@ -125,3 +125,11 @@ git tag -d nombre-del-tag: Borrar un tag en el repositorio local.
 git tag o git show-ref --tags: Listar los tags de nuestro repositorio local.
 git push origin --tags: Publicar un tag en el repositorio remoto.
 git tag -d nombre-del-tag y git push origin :refs/tags/nombre-del-tag: Borrar un tag del repositorio remoto.
+git show-ref --tags:Muestra a que hash o a que commit esta conectado un TAG
+
+git push origin --tags: Empujamos los TAGs creados en nuestro local a remoto
+
+git push origin :refs/tags/dormido: Elimina un tag basado en la referencia en el remoto
+
+
+[ENVIAR DIFERENTES RAMAS AL SERVIDOR]
