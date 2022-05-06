@@ -111,3 +111,17 @@ git remote -v: Nos muestra si tenemos un repositorio remoto y agrega informació
 
 [Resolver problemas al conectarme a un repo remoto y que existan cambios alla que no estan sincronizados con los mios]
 git pull origin master --allow-unrelated-histories
+
+
+
+[Crear ALias en GIT]
+git config --global alias.superlog "log --graph --abbrev-commit --decorate --date=relative --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all"
+
+
+
+[TAGS]
+git tag -a nombre-del-tag id-del-commit: Crear un nuevo tag y asignarlo a un commit.
+git tag -d nombre-del-tag: Borrar un tag en el repositorio local.
+git tag o git show-ref --tags: Listar los tags de nuestro repositorio local.
+git push origin --tags: Publicar un tag en el repositorio remoto.
+git tag -d nombre-del-tag y git push origin :refs/tags/nombre-del-tag: Borrar un tag del repositorio remoto.

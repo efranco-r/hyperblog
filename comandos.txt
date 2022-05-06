@@ -10,3 +10,6 @@ History: Te muestra el historico de comandos usados
 ! + numero comando en histori: Te ejecuta el comando definido en la lista dada en History
 rm: Elimina un archivo
 --help: Te muestra las opciones que tienes para ejecutar el comando definido como inicio, ejemplo: rm --help
+
+
+alias nameAlia = "<Comando>": Te permite crear un alias (shorcut) para un comando que desees.
