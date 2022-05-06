@@ -88,7 +88,7 @@ git log > log.txt: guardar los logs en un archivo txt
 
 
 
-Cómo funcionan las ramas en GIT
+[Cómo funcionan las ramas en GIT]
 Las ramas son la manera de hacer cambios en nuestro proyecto sin afectar el flujo de trabajo de la rama principal. Esto porque queremos trabajar una parte muy específica de la aplicación o simplemente experimentar.
 
 git branch -nombre de la rama-: Con este comando se genera una nueva rama.
@@ -97,6 +97,9 @@ git checkout -b rama: Genera una rama y nos mueve a ella automáticamente, Es de
 git reset id-commit: Nos lleva a cualquier commit no importa la rama, ya que identificamos el id del tag., eliminando el historial de los commit posteriores al tag seleccionado.
 git checkout rama-o-id-commit: Nos lleva a cualquier commit sin borrar los commit posteriores al tag seleccionado.
 
+git show-branch: Nos muestra las ramas existentes y su historia
+git show-branch --all: Nos muestra las ramas existentes y su historia pero con algo mas de información
+gitk: Abre la historia con un IDE.
 
 
 
