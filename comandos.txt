@@ -18,3 +18,5 @@ alias nameAlia = "<Comando>": Te permite crear un alias (shorcut) para un comand
 vim file.txt: Abrir el archivo en vim
 i: Una vez abierto el documento, nos permite insertar
 esc + :wq: Guarda los cambios y cierra el editor de vim
+
+Test
